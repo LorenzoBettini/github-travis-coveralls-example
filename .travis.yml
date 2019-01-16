@@ -1,0 +1,9 @@
+language: java
+
+jdk: openjdk8
+
+# skip installation step
+install: true
+
+script:
+   - mvn -f com.examples.myproject/pom.xml clean verify
