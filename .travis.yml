@@ -5,5 +5,9 @@ jdk: openjdk8
 # skip installation step
 install: true
 
+cache:
+   directories:
+      - $HOME/.m2
+
 script:
    - mvn -f com.examples.myproject/pom.xml clean verify
