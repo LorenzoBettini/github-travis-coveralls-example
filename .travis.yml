@@ -20,4 +20,4 @@ cache:
       - $HOME/.m2
 
 script:
-   - mvn -f com.examples.myproject/pom.xml clean verify
+   - mvn -f com.examples.myproject/pom.xml clean verify -Pjacoco
