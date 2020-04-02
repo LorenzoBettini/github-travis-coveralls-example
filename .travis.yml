@@ -5,7 +5,7 @@ matrix:
       # always build this environment
       - os: linux
         dist: xenial
-        jdk: openjdk9
+        jdk: openjdk11
         env: ADDITIONAL_MAVEN_ARGS="-Pjacoco coveralls:report"
       # only on PR
       - os: linux
