@@ -11,7 +11,7 @@ matrix:
       - os: linux
         dist: xenial
         jdk: openjdk8
-        env: ADDITIONAL_MAVEN_ARGS="-Pjacoco coveralls:report"
+        if: type IN (pull_request)
       # only on PR or after merging a PR
       - os: osx
         osx_image: xcode10.1
